@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will Wiley | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #f1f1f1;
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background-color: #1e1e1e;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .section-padding {
+      padding: 80px 0;
+    }
+    .project-card {
+      background-color: #2c2c2c;
+      color: #fff;
+      border: none;
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    .card-img-top {
+      height: 250px; /* Adjust this height as needed */
+      object-fit: cover;
+    }
+    .form-control,
+    .form-control:focus,
+    textarea {
+      background-color: #2c2c2c;
+      color: #fff;
+      border: 1px solid #444;
+    }
+    .form-control::placeholder {
+      color: #bbb;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: #f8f9fa;
+    }
+    .navbar-dark .navbar-brand {
+      color: #fff;
+    }
+    footer {
+      background-color: #1e1e1e;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">W.E. Wiley</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://wewiley001.github.io/wewileymultimedia/">Video</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <h1 class="display-4 text-light">Will Wiley</h1>
+      <p class="lead text-light">A UX Designer and Game Developer, specializing in visual storytelling and interactive experiences.</p>
+      <a href="#projects" class="btn btn-primary mt-3">View My Work</a>
+    </div>
+  </section>
+
+ <section id="about" class="section-padding bg-dark">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+             <h2 class="text-light">About This Page</h2>
+        </div>
+        <div class="col-md-6">
+          <p>This portfolio page was created by me with HTML, CSS, and minimal JavaScript. Bootstrap is the primary driver for all interactable elements, while a lightbox plugin with JS is used for displaying media in a modal window.</p>
+          <p>This website itself is a portfolio piece, and is a work in progress. I will be adding more content and features over time, so check back often!</p>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <section id="projects" class="section-padding bg-secondary">
+    <div class="container">
+
+      <ul class="nav nav-pills justify-content-center mb-5" id="portfolioTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active text-light" id="shipped-tab" data-bs-toggle="pill" data-bs-target="#shipped" type="button" role="tab">Shipped Titles</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-light" id="demos-tab" data-bs-toggle="pill" data-bs-target="#demos" type="button" role="tab">Demos</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-light" id="galleries-tab" data-bs-toggle="pill" data-bs-target="#galleries" type="button" role="tab">Galleries</button>
+        </li>
+        <!--
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-light" id="case-studies-tab" data-bs-toggle="pill" data-bs-target="#case-studies" type="button" role="tab">Case Studies</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-light" id="writing-tab" data-bs-toggle="pill" data-bs-target="#writing" type="button" role="tab">Writing</button>
+        </li>
+      -->
+      </ul>
+
+      <div class="tab-content" id="portfolioTabsContent">
+        
+        <div class="tab-pane fade show active" id="shipped" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/2023-mortal-kombat-1-4k-4t-1.webp" class="card-img-top" alt="MK1">
+                <div class="card-body">
+                  <h5 class="card-title">Mortal Kombat 1</h5>
+                  <p class="card-text text-secondary">As a QA Analyst, I worked under contract at NetherRealm Studios during the production of the 12th Mortal Kombat game testing gameplay, cinematics, and usability.</p>
+                  <a href="pages/shipped/mk1.html" class="btn btn-outline-light btn-sm">Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card h-100">
+                    <img src="img/wabbajawn/wabbajack-2070419017.jpg" class="card-img-top" alt="The Wabbajawn">
+                    <div class="card-body">
+                        <h5>The Wabbajawn</h5>
+                        <p class="text-secondary">Unique Weapon Mod made for Starfield inspired by the iconic weapon from the Elder Scroll Series.</p>
+                        <a href="pages/shipped/wabbajawn.html" class="btn btn-outline-light btn-sm">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card h-100">
+                    <img src="img/mko/OIP-1406114917.jpg" class="card-img-top" alt="Mortal Kombat: Onslaught">
+                    <div class="card-body">
+                        <h5>Mortal Kombat: Onslaught</h5>
+                        <p class="text-secondary">An action-adventure beat 'em up role-playing video game, developed by NetherRealm Studios.</p>
+                        <a href="pages/shipped/mkonslaught.html" class="btn btn-outline-light btn-sm">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card h-100">
+                    <img src="img/starencroacher/LJjyLf.png" class="card-img-top" alt="Star Encroachers">
+                    <div class="card-body">
+                        <h5>Star Encroachers</h5>
+                        <p class="text-secondary">A Space Invaders knockoff made to refamiliarize myself with Unity.</p>
+                        <a href="https://wewileydesign.itch.io/2d-shooter" class="btn btn-outline-light btn-sm">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card h-100">
+                    <img src="img/astray/5c5ff0_d12c74f03d964857836a0288092e48d2.avif" class="card-img-top" alt="Astray: A Forsaken Tale">
+                    <div class="card-body">
+                        <h5>Astray: A Forsaken Tale</h5>
+                        <p class="text-secondary">I was a game writer for this First-Person Dark Fantasy Stealth/Puzzle game.</p>
+                        <a href="pages/shipped/astray.html" class="btn btn-outline-light btn-sm">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card h-100">
+                    <img src="img/astraltrials/39c2104b-bf22-4a83-9819-2c69d7810cf0_rw_1200.png" class="card-img-top" alt="Astral Trials">
+                    <div class="card-body">
+                        <h5>Astral Trials</h5>
+                        <p class="text-secondary">A 2D platformer game built in Unity to refamiliarize myself with the engine.</p>
+                        <a href="https://wewileydesign.itch.io/astral-trials" class="btn btn-outline-light btn-sm">Details</a>
+                    </div>
+                </div>
+            </div>
+          </div> </div> <div class="tab-pane fade" id="demos" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/consume/8bc1c03c10ce90de73d2203a0e42d130aad9e81b437c53930e0d4fd81a4359a4-2538256882.jpg" class="card-img-top" alt="Project: Consume">
+                <div class="card-body">
+                  <h5 class="card-title">Project: Consume</h5>
+                  <p class="card-text text-secondary">Recreation of a classic arcade game in Unity with additional features.</p>
+                  <a href="pages/demos/consume.html" class="btn btn-outline-light btn-sm">Watch Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/starfield-creator-engine-2-e1694094381720-605419726.jpg" class="card-img-top" alt="Creationist Bot">
+                <div class="card-body">
+                  <h5 class="card-title">Creationist Bot</h5>
+                  <p class="card-text text-secondary">Rapid Prototype made with AI for QA automation bot for Bethesda Game Studio Games.</p>
+                  <a href="https://github.com/wewiley001/CreationistBot.git" class="btn btn-outline-light btn-sm">Watch Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/4ba33dfa-de2e-454f-b0a7-e1707a6cf729.png" class="card-img-top" alt="Creation Kit Mods">
+                <div class="card-body">
+                  <h5 class="card-title">Creation Kit Mods</h5>
+                  <p class="card-text text-secondary">A collection of WIP mods and contributed work for content made in the Creation Kit.</p>
+                  <a href="pages/demos/creationkitmods.html" class="btn btn-outline-light btn-sm">Watch Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/observationdeck/a086ee20-4e0b-4f2d-aacc-f175fcc2d72d_rw_1920.png" class="card-img-top" alt="observation deck">
+                <div class="card-body">
+                  <h5 class="card-title">Observation Deck Environment</h5>
+                  <p class="card-text text-secondary">A 3D environment created in Unreal Engine 5 with sci-fi aesthetics.</p>
+                  <a href="pages/demos/observationdeck.html" class="btn btn-outline-light btn-sm">Watch Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/ancienttemple/5c3a5c71-4a3b-40e5-b526-54903ab502e5_rw_1920.png" class="card-img-top" alt="Ancient Temple Environment">
+                <div class="card-body">
+                  <h5 class="card-title">Ancient Temple Environment</h5>
+                  <p class="card-text text-secondary">A 3D environment created in Unreal Engine 5 with Roman-inspired aesthetics.</p>
+                  <a href="pages/demos/ancienttemple.html" class="btn btn-outline-light btn-sm">Watch Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/faceoff/f897d23b-cc56-472d-85eb-8418ec78a3e1_rw_1200.png" class="card-img-top" alt="Face Off">
+                <div class="card-body">
+                  <h5 class="card-title">Face Off</h5>
+                  <p class="card-text text-secondary">A cinematic film created in Unreal Engine 5 with a focus on lighting and atmosphere.</p>
+                  <a href="pages/demos/faceoff.html" class="btn btn-outline-light btn-sm">Watch Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/HighresScreenshot00000.webp" class="card-img-top" alt="Target Practice">
+                <div class="card-body">
+                  <h5 class="card-title">Target Practice</h5>
+                  <p class="card-text text-secondary">A time-trialled shooting gallery demo created in Unreal Engine 5.</p>
+                  <a href="pages/demos/targetpractice.html" class="btn btn-outline-light btn-sm">Watch Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/83310dac-5b8f-4e63-b441-b7d4cac6a9f7.png" class="card-img-top" alt="Selenite - A No-Code Selenium App">
+                <div class="card-body">
+                  <h5 class="card-title">Selenite - A No-Code Selenium App</h5>
+                  <p class="card-text text-secondary">A rapid prototype built using Selenium and Python to automate browser interactions.</p>
+                  <a href="https://github.com/wewiley001/SeleniteSeleniumApp" class="btn btn-outline-light btn-sm">Watch Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/cyberpunkapartment/Screenshot+2024-03-07+02-39-17.webp" class="card-img-top" alt="Cyberpunk Apartment">
+                <div class="card-body">
+                  <h5 class="card-title">Cyberpunk Apartment</h5>
+                  <p class="card-text text-secondary">A 3D environment created in Unreal Engine 5 with a cyberpunk aesthetic.</p>
+                  <a href="pages/demos/cyberpunkapartment.html" class="btn btn-outline-light btn-sm">Watch Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Galleries -->
+          </div> </div> <div class="tab-pane fade" id="galleries" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/apps-for-Etsy-1694288774.png" class="card-img-top" alt="Etsy Redesign">
+                <div class="card-body">
+                  <h5 class="card-title">Etsy Mobile App: AI-Powered Redesign</h5>
+                  <p class="card-text text-secondary">Visual and Experience Redesign for Etsy's mobile app using AI tools.</p>
+                  <a href="pages/galleries/etsy.html" class="btn btn-outline-light btn-sm">See Gallery</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/Frontier - COVER.png" class="card-img-top" alt="Terminus">
+                <div class="card-body">
+                  <h5 class="card-title">Terminus GaaS UI/UX Concept</h5>
+                  <p class="card-text text-secondary">An Original UI/UX concept for a game-as-a-service platform.</p>
+                  <a href="https://www.artstation.com/artwork/98JBnN" class="btn btn-outline-light btn-sm">See Gallery</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/ae84720b553c4ce943e9c342621b60f198beda0dbf533e21-1491384124.jpg" class="card-img-top" alt="Cyberpunk UI">
+                <div class="card-body">
+                  <h5 class="card-title">Cyberpunk 2077 - Menu UI Redesign</h5>
+                  <p class="card-text text-secondary">A UI redesign for Cyberpunk 2077's main menu, created in Figma.</p>
+                  <a href="https://www.artstation.com/artwork/oJvwem" class="btn btn-outline-light btn-sm">See Gallery</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/steam-logo-66890602.jpg" class="card-img-top" alt="Steam Mockups">
+                <div class="card-body">
+                  <h5 class="card-title">Steam Marketing Email Mockups</h5>
+                  <p class="card-text text-secondary">Mockups for marketing emails for Steam's platform.</p>
+                  <a href="https://www.artstation.com/artwork/989PmN" class="btn btn-outline-light btn-sm">See Gallery</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/starfield-art-HD-scaled-1751189292.jpg" class="card-img-top" alt="Starfield Redesign">
+                <div class="card-body">
+                  <h5 class="card-title">Starfield - Inventory UI/UX Redesign</h5>
+                  <p class="card-text text-secondary">A UI/UX redesign for Starfield's inventory system, created in Figma.</p>
+                  <a href="https://www.artstation.com/artwork/qJGmly" class="btn btn-outline-light btn-sm">See Gallery</a>
+                </div>
+              </div>
+            </div>
+            <!---
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/OIP-2556721649.jpg" class="card-img-top" alt="EPals Mockups">
+                <div class="card-body">
+                  <h5 class="card-title">EPals.com Social Media UI Mockups</h5>
+                  <p class="card-text text-secondary">Mockups for EPals.com's educational social media platform.</p>
+                  <a href="https://www.artstation.com/artwork/989PmN" class="btn btn-outline-light btn-sm">See Gallery</a>
+                </div>
+              </div>
+            </div>
+            -->
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/Mortal_Kombat_1_2023_11_12_MK1-2943791044.webp" class="card-img-top" alt="MK Mobile Port">
+                <div class="card-body">
+                  <h5 class="card-title">Mortal Kombat - Mobile UX Port Concept</h5>
+                  <p class="card-text text-secondary">A mobile UX port concept for Mortal Kombat, created in Figma.</p>
+                  <a href="https://www.artstation.com/artwork/x3X90W" class="btn btn-outline-light btn-sm">See Gallery</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/1694370294546.jpg" class="card-img-top" alt="Fantasy Inventory">
+                <div class="card-body">
+                  <h5 class="card-title">UI Peeps Challenge: Fantasy Inventory</h5>
+                  <p class="card-text text-secondary">A UI challenge for fantasy inventory design from UI Peeps.</p>
+                  <a href="https://www.artstation.com/artwork/3ENmoD" class="btn btn-outline-light btn-sm">See Gallery</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <img src="img/homepage/cover.png" class="card-img-top" alt="Ghost of Yotei">
+                <div class="card-body">
+                  <h5 class="card-title">Ghost of Yotei Usability Redesign</h5>
+                  <p class="card-text text-secondary">A redesign of the Ghost of Yotei's visual game modes.</p>
+                  <a href="https://www.artstation.com/artwork/zxyzlL" class="btn btn-outline-light btn-sm">See Gallery</a>
+                </div>
+              </div>
+            </div>
+          </div> </div> 
+  <!-- 
+          <div class="tab-pane fade" id="case-studies" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card project-card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Etsy Gen-AI Redesign</h5>
+                  <p class="card-text text-secondary">A deep dive into integrating AI for mobile commerce.</p>
+                  <a href="#" class="btn btn-outline-light btn-sm">Read Case Study</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4"><div class="card project-card h-100"><div class="card-body"><h5>UX Audit: Project Alpha</h5><p class="text-secondary">Usability analysis and recommendations.</p></div></div></div>
+            <div class="col-md-4"><div class="card project-card h-100"><div class="card-body"><h5>Mobile Navigation Study</h5><p class="text-secondary">Comparative study of gesture-based navigation.</p></div></div></div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="writing" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-4"><div class="card project-card h-100"><div class="card-body"><h5>The Future of GaaS UI</h5><p class="text-secondary">Published in Medium</p></div></div></div>
+            <div class="col-md-4"><div class="card project-card h-100"><div class="card-body"><h5>Dark Mode Design Patterns</h5><p class="text-secondary">Published in Medium</p></div></div></div>
+            <div class="col-md-4"><div class="card project-card h-100"><div class="card-body"><h5>Writing for Haunted Castles</h5><p class="text-secondary">Technical writing deep-dive.</p></div></div></div>
+          </div>
+        </div>
+      --> 
+      </div>
+       
+    </div> 
+
+  </section>
+
+
+
+  <footer class="text-center text-light py-4">
+    <div class="container">
+      <p>© 2025 William E. Wiley. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
